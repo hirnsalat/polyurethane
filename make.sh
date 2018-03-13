@@ -1,3 +1,3 @@
-#!/bin/sh
-
-pandoc --filter pandoc-citeproc main.md -o export.pdf
+#!/bin/bash
+mkdir -p build
+pandoc --filter pandoc-citeproc main.md -o build/main.pdf
