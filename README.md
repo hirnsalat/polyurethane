@@ -26,7 +26,7 @@ There's a shell script that automates the build (`build.sh`) and also uses pando
 
 The `references.json` can be generated using e.g. [zotero](https://www.zotero.org/) (install [better-bibtex](https://github.com/retorquere/zotero-better-bibtex) and export as "better csl").
 
-If you want **html**, run `pandoc --standalone --filter pandoc-citeproc main.md -o export.html` (the additional flag adds a header and a body-tag).
+If you want **html**, run `pandoc --standalone --filter pandoc-citeproc main.md -o build/index.html` (the additional flag adds a header and a body-tag).
 
-For **media-wiki-syntax** use `pandoc --filter pandoc-citeproc main.md -t mediawiki -o export.mediawiki.txt`.
+For **media-wiki-syntax** use `pandoc --filter pandoc-citeproc main.md -t mediawiki -o build/main.mediawiki.txt`.
 
