@@ -22,7 +22,7 @@ Alternatively, you can also find [pandoc-installers for all OSes here](https://g
 # Build 
 
 Build **pdf** `pandoc --filter pandoc-citeproc main.md -o build/main.pdf`. 
-There's a shell script that automates the build (`build.sh`). of course, that will only work if the setup's been done.
+There's a shell script that automates the build (`build.sh`) and also uses pandoc.
 
 The `references.json` can be generated using e.g. [zotero](https://www.zotero.org/) (install [better-bibtex](https://github.com/retorquere/zotero-better-bibtex) and export as "better csl").
 
