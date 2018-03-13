@@ -6,8 +6,6 @@ author:
 tags: [some, nice, tags]
 date: 25.01.2018
 
-documentclass: sigchi
-csl: acm-sigchi-proceedings.csl
 bibliography: references.json
 link-citations: true
 ---
