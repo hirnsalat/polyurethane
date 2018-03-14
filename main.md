@@ -6,6 +6,9 @@ author:
 tags: [some, nice, tags]
 date: 25.01.2018
 
+documentclass: article
+#documentclass: book
+
 bibliography: references.json
 link-citations: true
 ---
