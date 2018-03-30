@@ -1,6 +1,12 @@
-# polyurethane
+# About
 
-A skeleton project for writing papers in markdown. Supports citations and output in pdf (via LaTeX) and html.
+[specifications in wiki](Upload_Draft_Conference_Paper_Jan_24)
+
+[template](https://sigchi.org/templates/) and outline of sigchi
+
+should be 9-10 pages (including figures, pictures, sketches, etc)
+
+section-specific specifications are in the main.md
 
 # Setup
 
@@ -21,12 +27,11 @@ Alternatively, you can also find [pandoc-installers for all OSes here](https://g
 
 # Build 
 
-Build **pdf** `pandoc --filter pandoc-citeproc main.md -o build/main.pdf`. 
-There's a shell script that automates the build (`build.sh`) and also uses pandoc.
+Build the **report-pdf** `pandoc --filter pandoc-citeproc main.md -o export.pdf`. 
+There's a shell script that automates the build (`build.sh`). of course, that will only work if the setup's been done.
 
-The `references.json` can be generated using e.g. [zotero](https://www.zotero.org/) (install [better-bibtex](https://github.com/retorquere/zotero-better-bibtex) and export as "better csl").
+The `references.json` can be generated using e.g. [zotero](https://www.zotero.org/).
 
-If you want **html**, run `pandoc --standalone --filter pandoc-citeproc main.md -o build/index.html` (the additional flag adds a header and a body-tag).
+If you want **html**, run `pandoc --standalone --filter pandoc-citeproc main.md -o export.html` (the additional flag adds a header and a body-tag).
 
-For **media-wiki-syntax** use `pandoc --filter pandoc-citeproc main.md -t mediawiki -o build/main.mediawiki.txt`.
-
+For **media-wiki-syntax** use `pandoc --filter pandoc-citeproc main.md -t mediawiki -o export.mediawiki.txt`.
